@@ -1,26 +1,34 @@
-# 🧪 EHR System API Tests
+# 🧪 PatientController Test Suite
 
-A dedicated test suite for validating the EHR backend APIs using **JUnit**, **Mockito**, and **Postman**.
-
----
-
-## ✅ What’s Covered
-- Unit tests for controller logic
-- Mocked service layer responses
-- API validation via Postman
-- Edge case handling and assertions
+This repository contains unit tests for the `PatientController` class in the **EHR System Backend**.  
+The tests are written using **JUnit 5** and validate patient management functionality such as retrieval, creation, and duplicate handling.
 
 ---
 
-## 🛠️ Tech Stack
-- **Testing Frameworks:** JUnit 5, Mockito
-- **API Testing:** Postman
-- **Backend Reference:** [ehr-system-backend](https://github.com/robelabraha/ehr-system-backend)
+## 📌 Features Tested
+
+- Retrieve all patients
+- Fetch patient by ID
+- Create new patients
+- Handle invalid or duplicate inputs
 
 ---
 
-## ⚙️ Running Tests
+## ⚙️ Tech Stack
 
-### JUnit
+- **Java 17+**  
+- **JUnit 5** (`org.junit.jupiter`)  
+- **Maven/Gradle** for build and dependency management  
+
+---
+
+## 🚀 Running Tests
+
+Clone the repository and run the test suite using your preferred build tool:
+
 ```bash
-./mvnw test
+# Using Maven
+mvn test
+
+# Using Gradle
+gradle test
